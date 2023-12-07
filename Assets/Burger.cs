@@ -8,14 +8,4 @@ public class Burger : MonoBehaviour
     {
         GameManager.clicks++;
     }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 }
