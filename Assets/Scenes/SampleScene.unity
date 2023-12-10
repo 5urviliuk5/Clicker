@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 113889542}
   - component: {fileID: 113889545}
   - component: {fileID: 113889544}
+  - component: {fileID: 113889546}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -183,7 +184,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: 0
-  cost: 100
+  cost: 90
+  cps: 10
+  name: 
 --- !u!114 &113889545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,7 +200,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   count: 0
-  cost: 10
+  cost: 35
+  cps: 1
+  name: 
+--- !u!114 &113889546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113889541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e591b603f8b7117499b4f6ecaee86cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
+  cost: 15
+  cps: 5
+  name: 
 --- !u!1 &152169128
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +1017,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1337
+  m_text: CLICKS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1005,8 +1026,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1023,8 +1044,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 220
-  m_fontSizeBase: 220
+  m_fontSize: 180
+  m_fontSizeBase: 180
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1588,6 +1609,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   count: 0
   cost: 15
+  cps: 0
+  name: machine
 --- !u!1 &1080588322
 GameObject:
   m_ObjectHideFlags: 0
@@ -2306,7 +2329,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CPS: 1337'
+  m_text: CPS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2315,8 +2338,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2818,6 +2841,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   count: 0
   cost: 90
+  cps: 0
+  name: worker
 --- !u!1 &2049403276
 GameObject:
   m_ObjectHideFlags: 0
@@ -3091,6 +3116,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   count: 0
   cost: 35
+  cps: 0
+  name: grandma
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
